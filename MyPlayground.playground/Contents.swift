@@ -54,3 +54,24 @@ let diffFrac = Int((elapsedTime2 - Double(diffSec+(diffMin*60)))*10)
 
 
 let elapsedString: String = String(format: "%02d:%02d.%01d",diffMin, diffSec, diffFrac)
+
+
+
+
+
+var tempUnits: String = "R" // love to Rankine (not really)
+var newUnits: String = "C"
+
+func swap() {
+    (tempUnits, newUnits) = (newUnits, tempUnits)
+}
+
+swap(&tempUnits, &newUnits)
+
+print(tempUnits)
+
+
+swap(&tempUnits, &newUnits)
+
+print(tempUnits)
+

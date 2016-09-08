@@ -14,6 +14,7 @@
 		A48D39011D8201E70049077F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48D38FF1D8201E70049077F /* LaunchScreen.storyboard */; };
 		A48D390C1D8201E70049077F /* TempConverterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D390B1D8201E70049077F /* TempConverterAppTests.swift */; };
 		A48D39171D8201E70049077F /* TempConverterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D39161D8201E70049077F /* TempConverterAppUITests.swift */; };
+		A48D39251D8202A40049077F /* TempConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D39241D8202A40049077F /* TempConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A48D39121D8201E70049077F /* TempConverterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempConverterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48D39161D8201E70049077F /* TempConverterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverterAppUITests.swift; sourceTree = "<group>"; };
 		A48D39181D8201E70049077F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48D39241D8202A40049077F /* TempConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A48D38FD1D8201E60049077F /* Assets.xcassets */,
 				A48D38FF1D8201E70049077F /* LaunchScreen.storyboard */,
 				A48D39021D8201E70049077F /* Info.plist */,
+				A48D39241D8202A40049077F /* TempConverter.swift */,
 			);
 			path = TempConverterApp;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48D39251D8202A40049077F /* TempConverter.swift in Sources */,
 				A48D38F91D8201E60049077F /* ViewController.swift in Sources */,
 				A48D38F71D8201E60049077F /* AppDelegate.swift in Sources */,
 			);

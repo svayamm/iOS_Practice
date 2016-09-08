@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var inputTemperature: UITextField!
+    @IBOutlet weak var convertedLabel: UILabel!
+    @IBOutlet weak var currentUnitLabel: UILabel!
+    @IBOutlet weak var newUnitLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

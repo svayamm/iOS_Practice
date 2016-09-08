@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43C986B1D81027900EBE497 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C986A1D81027900EBE497 /* Stopwatch.swift */; };
 		A4C078191D80EE750078A73C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C078181D80EE750078A73C /* AppDelegate.swift */; };
 		A4C0781B1D80EE750078A73C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C0781A1D80EE750078A73C /* ViewController.swift */; };
 		A4C0781E1D80EE760078A73C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C0781C1D80EE760078A73C /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A43C986A1D81027900EBE497 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		A4C078151D80EE750078A73C /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C078181D80EE750078A73C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C0781A1D80EE750078A73C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				A4C0781F1D80EE760078A73C /* Assets.xcassets */,
 				A4C078211D80EE760078A73C /* LaunchScreen.storyboard */,
 				A4C078241D80EE760078A73C /* Info.plist */,
+				A43C986A1D81027900EBE497 /* Stopwatch.swift */,
 			);
 			path = Stopwatch;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C0781B1D80EE750078A73C /* ViewController.swift in Sources */,
+				A43C986B1D81027900EBE497 /* Stopwatch.swift in Sources */,
 				A4C078191D80EE750078A73C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +486,7 @@
 				A4C0783F1D80EE770078A73C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4C078401D80EE770078A73C /* Build configuration list for PBXNativeTarget "StopwatchTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				A4C078421D80EE770078A73C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4C078431D80EE770078A73C /* Build configuration list for PBXNativeTarget "StopwatchUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				A4C078451D80EE770078A73C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,8 +21,14 @@ class Stopwatch {
     var elapsedTimeAsString: String {
         // return the formatted string...
         let diffMin = Int(elapsedTime/60)
+        print(diffMin)
         let diffSec = Int(elapsedTime - Double(diffMin*60))
+        print(diffSec)
         let diffFrac = Int((elapsedTime - Double(diffSec+(diffMin*60)))*10)
         return String(format: "%02d:%02d.%01d",diffMin, diffSec, diffFrac)
     }
+    var isRunning: Bool {
+        return startTime != nil
+    }
+    
 }

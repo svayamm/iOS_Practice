@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let converter = TempConverter()
+    
     @IBOutlet weak var inputTemperature: UITextField!
     @IBOutlet weak var convertedLabel: UILabel!
     @IBOutlet weak var currentUnitLabel: UILabel!
@@ -18,11 +20,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        convertedLabel = "--"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateLabels() {
+        
+        
+    }
+    
+    func updateDisplay() {
+        
+        
     }
 
 

@@ -19,7 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    @IBAction func startButtonTapped(sender: UIButton) {
+        // code to start the clock
+    }
+    
+    @IBAction func stopButtonTapped(sender: UIButton) {
+        // code to stop the clock
+    }
+    @IBOutlet weak var elapsedTimeLabel: UILabel!
 }
 

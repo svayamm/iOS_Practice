@@ -19,12 +19,13 @@ class TempConverter {
 //    }
     
     class func convert(temp: Int, unit: String = "F") -> Int {
-        if unit == "F" {
-            return 5 * (temp - 32) / 9
-        }
         if tempBelowAbsoluteZero(temp, unit: unit) {
             return -1000
         }
+        if unit == "F" {
+            return 5 * (temp - 32) / 9
+        }
+       
         else {
             return (9 * temp) / 5 + 32
         }

@@ -20,7 +20,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        convertedLabel = "--"
+        convertedLabel.text = "--"
+        converter.convert()
+        updateLabels()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,15 +31,26 @@ class ViewController: UIViewController {
     }
     
     func updateLabels() {
-        
-        
+        convertedLabel.text = converter.convertedTempDisplay
+        currentUnitLabel.text = converter.tempUnits
+        newUnitLabel.text = converter.newUnits
     }
     
-    func updateDisplay() {
+//    func updateDisplay() {
+//        
+//        
+//    }
+    
+    @IBAction func convertTemp() {
         
-        
+        let userData:String = inputTemperature.text!
+        if (userData == "") {
+            converter.inputTemp = -500
+        }
+        else {
+            converter.inputTemp = Int(userData) ?? -500
+        }
     }
 
 
 }
-

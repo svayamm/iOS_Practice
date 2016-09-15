@@ -41,7 +41,7 @@ class TempConverter {
         
         // test to make sure above absolute zero for either Fahrenheit or Celsius
         
-        return (inputTemp < -458 && tempUnits == "°F") || (inputTemp < -274 && tempUnits == "°C")
+        return (inputTemp > -458 && tempUnits == "°F") || (inputTemp > -274 && tempUnits == "°C")
         
     }
     
@@ -51,5 +51,9 @@ class TempConverter {
 
         (tempUnits, newUnits) = (newUnits, tempUnits)
         
-    }  
+    }
+    
+    func reset() {
+        convertedTempDisplay = "--"
+    }
 }

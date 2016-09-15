@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var convertedLabel: UILabel!
     @IBOutlet weak var currentUnitLabel: UILabel!
     @IBOutlet weak var newUnitLabel: UILabel!
+//    @IBOutlet weak var unitSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +56,10 @@ class ViewController: UIViewController {
         converter.convert()
         updateLabels()
     }
-
+    
+    @IBAction func switchChanged() {
+        converter.toggleUnits()
+        convertTemp()
+    }
 
 }

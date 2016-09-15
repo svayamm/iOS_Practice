@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     let converter = TempConverter()
     
@@ -16,16 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var convertedLabel: UILabel!
     @IBOutlet weak var currentUnitLabel: UILabel!
     @IBOutlet weak var newUnitLabel: UILabel!
-//    @IBOutlet weak var unitSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.inputTemperature.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
         converter.reset()
         updateLabels()
-//        convertTemp(inputTemperature)
-//        converter.convert()
-//        updateLabels()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,10 +36,10 @@ class ViewController: UIViewController {
         newUnitLabel.text = converter.newUnits
     }
     
-//    func updateDisplay() {
-//        
-//        
-//    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        inputTemperature.resignFirstResponder()
+        return true
+    }
     
     @IBAction func convertTemp() {
         

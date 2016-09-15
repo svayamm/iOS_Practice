@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A47E75831D8A38390078A6BD /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E75821D8A38390078A6BD /* AboutViewController.swift */; };
 		A48D38F71D8201E60049077F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D38F61D8201E60049077F /* AppDelegate.swift */; };
 		A48D38F91D8201E60049077F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D38F81D8201E60049077F /* ViewController.swift */; };
 		A48D38FC1D8201E60049077F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48D38FA1D8201E60049077F /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A47E75821D8A38390078A6BD /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		A48D38F31D8201E60049077F /* TempConverterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempConverterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48D38F61D8201E60049077F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48D38F81D8201E60049077F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				A48D38F61D8201E60049077F /* AppDelegate.swift */,
 				A48D38F81D8201E60049077F /* ViewController.swift */,
 				A48D38FA1D8201E60049077F /* Main.storyboard */,
+				A47E75821D8A38390078A6BD /* AboutViewController.swift */,
 				A48D38FD1D8201E60049077F /* Assets.xcassets */,
 				A48D38FF1D8201E70049077F /* LaunchScreen.storyboard */,
 				A48D39021D8201E70049077F /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				A48D39251D8202A40049077F /* TempConverter.swift in Sources */,
 				A48D38F91D8201E60049077F /* ViewController.swift in Sources */,
+				A47E75831D8A38390078A6BD /* AboutViewController.swift in Sources */,
 				A48D38F71D8201E60049077F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +490,7 @@
 				A48D391D1D8201E70049077F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A48D391E1D8201E70049077F /* Build configuration list for PBXNativeTarget "TempConverterAppTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				A48D39201D8201E70049077F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A48D39211D8201E70049077F /* Build configuration list for PBXNativeTarget "TempConverterAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				A48D39231D8201E70049077F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

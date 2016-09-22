@@ -19,22 +19,45 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="&lt;" id="0TV-s5-KxD"/>
+                        <barButtonItem title="&lt;" id="0TV-s5-KxD">
+                            <connections>
+                                <action selector="backTapped:" destination="BYZ-38-t0r" id="CZT-lC-BYW"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem systemItem="fixedSpace" id="msp-I0-mcq"/>
-                        <barButtonItem title="&gt;" id="bVr-yT-taW"/>
+                        <barButtonItem title="&gt;" id="bVr-yT-taW">
+                            <connections>
+                                <action selector="forwardTapped:" destination="BYZ-38-t0r" id="kY7-Cn-S33"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem systemItem="flexibleSpace" id="FQk-CR-dfM"/>
-                        <barButtonItem systemItem="stop" id="RXs-Hl-05z"/>
+                        <barButtonItem systemItem="stop" id="RXs-Hl-05z">
+                            <connections>
+                                <action selector="stopTapped:" destination="BYZ-38-t0r" id="m5f-o6-Fub"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="p83-SJ-JYg">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="bZi-69-pLh"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="bZi-69-pLh">
+                            <connections>
+                                <action selector="refreshTapped:" destination="BYZ-38-t0r" id="bTB-xE-nm5"/>
+                            </connections>
+                        </barButtonItem>
                         <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="9uV-cl-DKy">
-                            <rect key="frame" x="73" y="7" width="230" height="30"/>
+                            <rect key="frame" x="72.5" y="7" width="230" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="BYZ-38-t0r" id="ShO-1f-WyM"/>
+                            </connections>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" title="Go" id="CuO-2A-bQC"/>
+                        <barButtonItem key="rightBarButtonItem" title="Go" id="CuO-2A-bQC">
+                            <connections>
+                                <action selector="openPage:" destination="BYZ-38-t0r" id="9yZ-6n-ukj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="locationField" destination="9uV-cl-DKy" id="lIh-Ca-p6H"/>

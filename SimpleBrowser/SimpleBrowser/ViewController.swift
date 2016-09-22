@@ -40,9 +40,11 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
     
     func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
         let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Redirect to Home Page", style: .Default, handler: { action in
+            self.viewDidLoad()
+        })) // handler allows to reset
         presentViewController(alert, animated: true, completion: nil)
-    } //  how to clear location field and reset focus?
+    }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         locationField.resignFirstResponder()

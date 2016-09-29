@@ -35,7 +35,7 @@
                     <navigationItem key="navigationItem" title="Command" id="LSg-zP-ulR">
                         <barButtonItem key="rightBarButtonItem" title="Definition" id="gUH-yZ-tF6">
                             <connections>
-                                <segue destination="MGH-go-yag" kind="show" identifier="showDefinition" id="OJH-yv-m0G"/>
+                                <segue destination="MGH-go-yag" kind="show" identifier="showDefinition" id="lrI-8M-9Cr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -51,7 +51,7 @@
         <!--Definition View Controller-->
         <scene sceneID="GcH-34-ahK">
             <objects>
-                <viewController id="MGH-go-yag" customClass="DefinitionViewController" sceneMemberID="viewController">
+                <viewController id="MGH-go-yag" customClass="DefinitionViewController" customModule="Flashcards" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LS7-PP-n5i"/>
                         <viewControllerLayoutGuide type="bottom" id="AEx-J9-TAG"/>
@@ -76,6 +76,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="commandLabel" destination="eJS-rK-72h" id="KkG-gC-3cC"/>
+                        <outlet property="definitionLabel" destination="z1V-Ek-IwJ" id="rnp-A3-KAQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Hg-iJ-3bj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

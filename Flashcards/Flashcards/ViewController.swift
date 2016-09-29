@@ -15,9 +15,18 @@ class ViewController: UIViewController {
     let deck = Deck()
     var flashcard: Flashcard?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Do any additional setup after loading the view, typically from a nib.
+//        if let flashcard = deck.drawRandomCard() {
+//            self.flashcard = flashcard
+//            commandLabel.text = flashcard.command
+//        }
+//    }
+    
+    // because we really want a new card every time this view appears
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         if let flashcard = deck.drawRandomCard() {
             self.flashcard = flashcard
             commandLabel.text = flashcard.command

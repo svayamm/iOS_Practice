@@ -16,6 +16,7 @@
 		A44CBD551D9C89CC006E6BEF /* FlashcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBD541D9C89CC006E6BEF /* FlashcardsUITests.swift */; };
 		A44CBD631D9CBEE9006E6BEF /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBD621D9CBEE9006E6BEF /* Flashcard.swift */; };
 		A44CBD651D9CCA5B006E6BEF /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBD641D9CCA5B006E6BEF /* Deck.swift */; };
+		A44CBD671D9CE5C7006E6BEF /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBD661D9CE5C7006E6BEF /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A44CBD561D9C89CC006E6BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44CBD621D9CBEE9006E6BEF /* Flashcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 		A44CBD641D9CCA5B006E6BEF /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		A44CBD661D9CE5C7006E6BEF /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				A44CBD341D9C89CB006E6BEF /* AppDelegate.swift */,
 				A44CBD361D9C89CB006E6BEF /* ViewController.swift */,
+				A44CBD661D9CE5C7006E6BEF /* DefinitionViewController.swift */,
 				A44CBD381D9C89CB006E6BEF /* Main.storyboard */,
 				A44CBD3B1D9C89CB006E6BEF /* Assets.xcassets */,
 				A44CBD3D1D9C89CB006E6BEF /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				A44CBD631D9CBEE9006E6BEF /* Flashcard.swift in Sources */,
 				A44CBD371D9C89CB006E6BEF /* ViewController.swift in Sources */,
 				A44CBD351D9C89CB006E6BEF /* AppDelegate.swift in Sources */,
+				A44CBD671D9CE5C7006E6BEF /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

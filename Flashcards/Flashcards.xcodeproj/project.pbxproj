@@ -14,6 +14,8 @@
 		A44CBD3F1D9C89CB006E6BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44CBD3D1D9C89CB006E6BEF /* LaunchScreen.storyboard */; };
 		A44CBD4A1D9C89CC006E6BEF /* FlashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBD491D9C89CC006E6BEF /* FlashcardsTests.swift */; };
 		A44CBD551D9C89CC006E6BEF /* FlashcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBD541D9C89CC006E6BEF /* FlashcardsUITests.swift */; };
+		A44CBD631D9CBEE9006E6BEF /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBD621D9CBEE9006E6BEF /* Flashcard.swift */; };
+		A44CBD651D9CCA5B006E6BEF /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBD641D9CCA5B006E6BEF /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A44CBD501D9C89CC006E6BEF /* FlashcardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44CBD541D9C89CC006E6BEF /* FlashcardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsUITests.swift; sourceTree = "<group>"; };
 		A44CBD561D9C89CC006E6BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44CBD621D9CBEE9006E6BEF /* Flashcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		A44CBD641D9CCA5B006E6BEF /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				A44CBD3B1D9C89CB006E6BEF /* Assets.xcassets */,
 				A44CBD3D1D9C89CB006E6BEF /* LaunchScreen.storyboard */,
 				A44CBD401D9C89CC006E6BEF /* Info.plist */,
+				A44CBD621D9CBEE9006E6BEF /* Flashcard.swift */,
+				A44CBD641D9CCA5B006E6BEF /* Deck.swift */,
 			);
 			path = Flashcards;
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44CBD651D9CCA5B006E6BEF /* Deck.swift in Sources */,
+				A44CBD631D9CBEE9006E6BEF /* Flashcard.swift in Sources */,
 				A44CBD371D9C89CB006E6BEF /* ViewController.swift in Sources */,
 				A44CBD351D9C89CB006E6BEF /* AppDelegate.swift in Sources */,
 			);

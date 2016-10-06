@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
@@ -14,6 +15,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var inputString: UITextField!
     @IBOutlet weak var translatedLabel: UILabel!
+    @IBOutlet weak var speakButton: UIButton!
+    
+    let speechSynthesizer = AVSpeechSynthesizer()
 
     
     override func viewDidLoad() {
@@ -21,6 +25,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.inputString.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
         reset()
+        speakButton.enabled = false
         inputString.becomeFirstResponder()
     }
     
@@ -39,13 +44,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    func textFieldDidBeginEditing(textField: UITextField) {
+        inputString.text = ""
+        translatedLabel.text = ""
+        speakButton.enabled = false
+    }
+    
     @IBAction func translateStr() {
-        
         let userData:String = inputString.text!
         //let trimmedString = userData.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         let trimmedString = userData.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         let result = translator.request(trimmedString)
         translatedLabel.text = String(result)
+        speakButton.enabled = true
+    }
+    
+    @IBAction func speak() {
+        let speechUtterance = AVSpeechUtterance(string: translatedLabel.text!)
+        speechSynthesizer.speakUtterance(speechUtterance)
     }
 }
+
 

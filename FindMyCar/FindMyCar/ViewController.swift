@@ -19,7 +19,30 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    var storedLocation = Location()
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "MainToMap"
+        {
+            if let destinationVC = segue.destinationViewController as?  MapViewController {
+                destinationVC.carLocation = storedLocation
+            }
+        }
+    }
+    
+    @IBAction func setLocation(sender: UIButton) {
+        storedLocation.getCurrentLocation()
+        let alert = UIAlertController(title: "Car Location Saved", message: generateMessage(), preferredStyle: .Alert)
+        presentViewController(alert, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "Back", style: .Default, handler: { action in
+            self.viewDidLoad()
+        })) // handler allows to reset
+    }
+    
+    func generateMessage() -> String {
+        let message = "Your car is currently at: \n( \(storedLocation.latitude), \(storedLocation.longitude) )\n\nWhen you want a map to this location, simply press the 'Where is my car?' button."
+        return message
+    }
 }
 

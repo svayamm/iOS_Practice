@@ -30,6 +30,9 @@
                                 <frame key="frameInset" minX="216" minY="155" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Here's My Car"/>
+                                <connections>
+                                    <action selector="setLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cL2-1l-4uu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,7 +44,6 @@
         <!--Map View Controller-->
         <scene sceneID="g2z-gd-ey0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AIo-lG-oZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="a6g-rv-II6" customClass="MapViewController" customModule="FindMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oHj-6f-Tk5"/>
@@ -51,7 +53,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-h3-v5r"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-h3-v5r">
+                                <frame key="frameInset" width="1000" height="1000"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -65,8 +69,9 @@
                         <outlet property="mapView" destination="hfd-h3-v5r" id="wiS-FA-can"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIo-lG-oZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="720.79999999999995" y="34.632683658170919"/>
+            <point key="canvasLocation" x="860" y="32"/>
         </scene>
     </scenes>
 </document>

@@ -20,12 +20,18 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         location.getCurrentLocation()
-        let initialLocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
-        centerMapOnLocation(initialLocation)
+        updatePin()
+    }
+    
+    var carLocation = Location()
+    
+    func updatePin() {
         let droppedPin = MKPointAnnotation()
-        droppedPin.coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
-        droppedPin.title = "You Are Here"
+        droppedPin.coordinate = CLLocationCoordinate2D(latitude: carLocation.latitude, longitude: carLocation.longitude)
+        droppedPin.title = "Your Car"
         mapView.addAnnotation(droppedPin)
+        let centeringLocation = CLLocation(latitude: carLocation.latitude, longitude: carLocation.longitude)
+        centerMapOnLocation(centeringLocation)
     }
     
     let regionRadius: CLLocationDistance = 350

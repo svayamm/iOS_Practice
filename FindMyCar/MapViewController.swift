@@ -14,14 +14,21 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
+    let location = Location()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let initialLocation = CLLocation(latitude: 40.4426092, longitude: -79.9454014)
+        location.getCurrentLocation()
+        let initialLocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
         centerMapOnLocation(initialLocation)
+        let droppedPin = MKPointAnnotation()
+        droppedPin.coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+        droppedPin.title = "You Are Here"
+        mapView.addAnnotation(droppedPin)
     }
     
-    let regionRadius: CLLocationDistance = 400
+    let regionRadius: CLLocationDistance = 350
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)

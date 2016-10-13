@@ -16,6 +16,7 @@
 		A4B5DDF91DAF3E2D00CCE3DD /* FindMyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DDF81DAF3E2D00CCE3DD /* FindMyCarUITests.swift */; };
 		A4B5DE071DAF9BE600CCE3DD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DE061DAF9BE600CCE3DD /* MapViewController.swift */; };
 		A4B5DE0C1DAFA98500CCE3DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B5DE0B1DAFA98500CCE3DD /* MapKit.framework */; };
+		A4B5DE101DAFB41D00CCE3DD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DE0F1DAFB41D00CCE3DD /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A4B5DDFA1DAF3E2D00CCE3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4B5DE061DAF9BE600CCE3DD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		A4B5DE0B1DAFA98500CCE3DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A4B5DE0F1DAFB41D00CCE3DD /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				A4B5DDD81DAF3E2C00CCE3DD /* AppDelegate.swift */,
 				A4B5DDDA1DAF3E2C00CCE3DD /* ViewController.swift */,
+				A4B5DE0F1DAFB41D00CCE3DD /* Location.swift */,
 				A4B5DE061DAF9BE600CCE3DD /* MapViewController.swift */,
 				A4B5DDDC1DAF3E2C00CCE3DD /* Main.storyboard */,
 				A4B5DDDF1DAF3E2C00CCE3DD /* Assets.xcassets */,
@@ -281,6 +284,7 @@
 			files = (
 				A4B5DDDB1DAF3E2C00CCE3DD /* ViewController.swift in Sources */,
 				A4B5DE071DAF9BE600CCE3DD /* MapViewController.swift in Sources */,
+				A4B5DE101DAFB41D00CCE3DD /* Location.swift in Sources */,
 				A4B5DDD91DAF3E2C00CCE3DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

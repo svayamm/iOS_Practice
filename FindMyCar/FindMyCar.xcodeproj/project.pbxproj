@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4B5DDD91DAF3E2C00CCE3DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DDD81DAF3E2C00CCE3DD /* AppDelegate.swift */; };
+		A4B5DDDB1DAF3E2C00CCE3DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DDDA1DAF3E2C00CCE3DD /* ViewController.swift */; };
+		A4B5DDDE1DAF3E2C00CCE3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B5DDDC1DAF3E2C00CCE3DD /* Main.storyboard */; };
+		A4B5DDE01DAF3E2C00CCE3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B5DDDF1DAF3E2C00CCE3DD /* Assets.xcassets */; };
+		A4B5DDE31DAF3E2D00CCE3DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B5DDE11DAF3E2D00CCE3DD /* LaunchScreen.storyboard */; };
+		A4B5DDEE1DAF3E2D00CCE3DD /* FindMyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DDED1DAF3E2D00CCE3DD /* FindMyCarTests.swift */; };
+		A4B5DDF91DAF3E2D00CCE3DD /* FindMyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DDF81DAF3E2D00CCE3DD /* FindMyCarUITests.swift */; };
+		A4B5DE071DAF9BE600CCE3DD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DE061DAF9BE600CCE3DD /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4B5DDEA1DAF3E2D00CCE3DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4B5DDCD1DAF3E2B00CCE3DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4B5DDD41DAF3E2B00CCE3DD;
+			remoteInfo = FindMyCar;
+		};
+		A4B5DDF51DAF3E2D00CCE3DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4B5DDCD1DAF3E2B00CCE3DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4B5DDD41DAF3E2B00CCE3DD;
+			remoteInfo = FindMyCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4B5DDD51DAF3E2C00CCE3DD /* FindMyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B5DDD81DAF3E2C00CCE3DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4B5DDDA1DAF3E2C00CCE3DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4B5DDDD1DAF3E2C00CCE3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4B5DDDF1DAF3E2C00CCE3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4B5DDE21DAF3E2D00CCE3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4B5DDE41DAF3E2D00CCE3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B5DDE91DAF3E2D00CCE3DD /* FindMyCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B5DDED1DAF3E2D00CCE3DD /* FindMyCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyCarTests.swift; sourceTree = "<group>"; };
+		A4B5DDEF1DAF3E2D00CCE3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B5DDF41DAF3E2D00CCE3DD /* FindMyCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B5DDF81DAF3E2D00CCE3DD /* FindMyCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyCarUITests.swift; sourceTree = "<group>"; };
+		A4B5DDFA1DAF3E2D00CCE3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B5DE061DAF9BE600CCE3DD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4B5DDD21DAF3E2B00CCE3DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B5DDE61DAF3E2D00CCE3DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B5DDF11DAF3E2D00CCE3DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4B5DDCC1DAF3E2B00CCE3DD = {
+			isa = PBXGroup;
+			children = (
+				A4B5DDD71DAF3E2C00CCE3DD /* FindMyCar */,
+				A4B5DDEC1DAF3E2D00CCE3DD /* FindMyCarTests */,
+				A4B5DDF71DAF3E2D00CCE3DD /* FindMyCarUITests */,
+				A4B5DDD61DAF3E2C00CCE3DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4B5DDD61DAF3E2C00CCE3DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4B5DDD51DAF3E2C00CCE3DD /* FindMyCar.app */,
+				A4B5DDE91DAF3E2D00CCE3DD /* FindMyCarTests.xctest */,
+				A4B5DDF41DAF3E2D00CCE3DD /* FindMyCarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4B5DDD71DAF3E2C00CCE3DD /* FindMyCar */ = {
+			isa = PBXGroup;
+			children = (
+				A4B5DDD81DAF3E2C00CCE3DD /* AppDelegate.swift */,
+				A4B5DDDA1DAF3E2C00CCE3DD /* ViewController.swift */,
+				A4B5DE061DAF9BE600CCE3DD /* MapViewController.swift */,
+				A4B5DDDC1DAF3E2C00CCE3DD /* Main.storyboard */,
+				A4B5DDDF1DAF3E2C00CCE3DD /* Assets.xcassets */,
+				A4B5DDE11DAF3E2D00CCE3DD /* LaunchScreen.storyboard */,
+				A4B5DDE41DAF3E2D00CCE3DD /* Info.plist */,
+			);
+			path = FindMyCar;
+			sourceTree = "<group>";
+		};
+		A4B5DDEC1DAF3E2D00CCE3DD /* FindMyCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4B5DDED1DAF3E2D00CCE3DD /* FindMyCarTests.swift */,
+				A4B5DDEF1DAF3E2D00CCE3DD /* Info.plist */,
+			);
+			path = FindMyCarTests;
+			sourceTree = "<group>";
+		};
+		A4B5DDF71DAF3E2D00CCE3DD /* FindMyCarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4B5DDF81DAF3E2D00CCE3DD /* FindMyCarUITests.swift */,
+				A4B5DDFA1DAF3E2D00CCE3DD /* Info.plist */,
+			);
+			path = FindMyCarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4B5DDD41DAF3E2B00CCE3DD /* FindMyCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B5DDFD1DAF3E2D00CCE3DD /* Build configuration list for PBXNativeTarget "FindMyCar" */;
+			buildPhases = (
+				A4B5DDD11DAF3E2B00CCE3DD /* Sources */,
+				A4B5DDD21DAF3E2B00CCE3DD /* Frameworks */,
+				A4B5DDD31DAF3E2B00CCE3DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyCar;
+			productName = FindMyCar;
+			productReference = A4B5DDD51DAF3E2C00CCE3DD /* FindMyCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4B5DDE81DAF3E2D00CCE3DD /* FindMyCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B5DE001DAF3E2D00CCE3DD /* Build configuration list for PBXNativeTarget "FindMyCarTests" */;
+			buildPhases = (
+				A4B5DDE51DAF3E2D00CCE3DD /* Sources */,
+				A4B5DDE61DAF3E2D00CCE3DD /* Frameworks */,
+				A4B5DDE71DAF3E2D00CCE3DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4B5DDEB1DAF3E2D00CCE3DD /* PBXTargetDependency */,
+			);
+			name = FindMyCarTests;
+			productName = FindMyCarTests;
+			productReference = A4B5DDE91DAF3E2D00CCE3DD /* FindMyCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4B5DDF31DAF3E2D00CCE3DD /* FindMyCarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B5DE031DAF3E2D00CCE3DD /* Build configuration list for PBXNativeTarget "FindMyCarUITests" */;
+			buildPhases = (
+				A4B5DDF01DAF3E2D00CCE3DD /* Sources */,
+				A4B5DDF11DAF3E2D00CCE3DD /* Frameworks */,
+				A4B5DDF21DAF3E2D00CCE3DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4B5DDF61DAF3E2D00CCE3DD /* PBXTargetDependency */,
+			);
+			name = FindMyCarUITests;
+			productName = FindMyCarUITests;
+			productReference = A4B5DDF41DAF3E2D00CCE3DD /* FindMyCarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4B5DDCD1DAF3E2B00CCE3DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Svayam Mishra";
+				TargetAttributes = {
+					A4B5DDD41DAF3E2B00CCE3DD = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					A4B5DDE81DAF3E2D00CCE3DD = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4B5DDD41DAF3E2B00CCE3DD;
+					};
+					A4B5DDF31DAF3E2D00CCE3DD = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4B5DDD41DAF3E2B00CCE3DD;
+					};
+				};
+			};
+			buildConfigurationList = A4B5DDD01DAF3E2B00CCE3DD /* Build configuration list for PBXProject "FindMyCar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4B5DDCC1DAF3E2B00CCE3DD;
+			productRefGroup = A4B5DDD61DAF3E2C00CCE3DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4B5DDD41DAF3E2B00CCE3DD /* FindMyCar */,
+				A4B5DDE81DAF3E2D00CCE3DD /* FindMyCarTests */,
+				A4B5DDF31DAF3E2D00CCE3DD /* FindMyCarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4B5DDD31DAF3E2B00CCE3DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B5DDE31DAF3E2D00CCE3DD /* LaunchScreen.storyboard in Resources */,
+				A4B5DDE01DAF3E2C00CCE3DD /* Assets.xcassets in Resources */,
+				A4B5DDDE1DAF3E2C00CCE3DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B5DDE71DAF3E2D00CCE3DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B5DDF21DAF3E2D00CCE3DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4B5DDD11DAF3E2B00CCE3DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B5DDDB1DAF3E2C00CCE3DD /* ViewController.swift in Sources */,
+				A4B5DE071DAF9BE600CCE3DD /* MapViewController.swift in Sources */,
+				A4B5DDD91DAF3E2C00CCE3DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B5DDE51DAF3E2D00CCE3DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B5DDEE1DAF3E2D00CCE3DD /* FindMyCarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B5DDF01DAF3E2D00CCE3DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B5DDF91DAF3E2D00CCE3DD /* FindMyCarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4B5DDEB1DAF3E2D00CCE3DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4B5DDD41DAF3E2B00CCE3DD /* FindMyCar */;
+			targetProxy = A4B5DDEA1DAF3E2D00CCE3DD /* PBXContainerItemProxy */;
+		};
+		A4B5DDF61DAF3E2D00CCE3DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4B5DDD41DAF3E2B00CCE3DD /* FindMyCar */;
+			targetProxy = A4B5DDF51DAF3E2D00CCE3DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4B5DDDC1DAF3E2C00CCE3DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4B5DDDD1DAF3E2C00CCE3DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4B5DDE11DAF3E2D00CCE3DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4B5DDE21DAF3E2D00CCE3DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4B5DDFB1DAF3E2D00CCE3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4B5DDFC1DAF3E2D00CCE3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4B5DDFE1DAF3E2D00CCE3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FindMyCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmuis.FindMyCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		A4B5DDFF1DAF3E2D00CCE3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FindMyCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmuis.FindMyCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		A4B5DE011DAF3E2D00CCE3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindMyCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmuis.FindMyCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyCar.app/FindMyCar";
+			};
+			name = Debug;
+		};
+		A4B5DE021DAF3E2D00CCE3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindMyCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmuis.FindMyCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyCar.app/FindMyCar";
+			};
+			name = Release;
+		};
+		A4B5DE041DAF3E2D00CCE3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FindMyCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmuis.FindMyCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindMyCar;
+			};
+			name = Debug;
+		};
+		A4B5DE051DAF3E2D00CCE3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FindMyCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cmuis.FindMyCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindMyCar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4B5DDD01DAF3E2B00CCE3DD /* Build configuration list for PBXProject "FindMyCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B5DDFB1DAF3E2D00CCE3DD /* Debug */,
+				A4B5DDFC1DAF3E2D00CCE3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4B5DDFD1DAF3E2D00CCE3DD /* Build configuration list for PBXNativeTarget "FindMyCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B5DDFE1DAF3E2D00CCE3DD /* Debug */,
+				A4B5DDFF1DAF3E2D00CCE3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4B5DE001DAF3E2D00CCE3DD /* Build configuration list for PBXNativeTarget "FindMyCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B5DE011DAF3E2D00CCE3DD /* Debug */,
+				A4B5DE021DAF3E2D00CCE3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4B5DE031DAF3E2D00CCE3DD /* Build configuration list for PBXNativeTarget "FindMyCarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B5DE041DAF3E2D00CCE3DD /* Debug */,
+				A4B5DE051DAF3E2D00CCE3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4B5DDCD1DAF3E2B00CCE3DD /* Project object */;
+}

@@ -22,6 +22,9 @@
                                 <frame key="frameInset" minX="48" minY="155" width="117" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Where's My Car?"/>
+                                <connections>
+                                    <segue destination="a6g-rv-II6" kind="show" identifier="MainToMap" id="zOS-pI-TfN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tmq-Ab-Zwl">
                                 <frame key="frameInset" minX="216" minY="155" width="97" height="30"/>
@@ -34,6 +37,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="g2z-gd-ey0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIo-lG-oZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="a6g-rv-II6" customClass="MapViewController" customModule="FindMyCar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oHj-6f-Tk5"/>
+                        <viewControllerLayoutGuide type="bottom" id="qdo-Iu-O08"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7dd-He-u2c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-h3-v5r"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hfd-h3-v5r" secondAttribute="trailing" id="HuT-pf-7WA"/>
+                            <constraint firstItem="hfd-h3-v5r" firstAttribute="top" secondItem="7dd-He-u2c" secondAttribute="top" id="SmB-50-nBT"/>
+                            <constraint firstItem="hfd-h3-v5r" firstAttribute="leading" secondItem="7dd-He-u2c" secondAttribute="leading" id="X4a-Pb-D7f"/>
+                            <constraint firstItem="hfd-h3-v5r" firstAttribute="bottom" secondItem="qdo-Iu-O08" secondAttribute="top" id="h7a-kF-aod"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="hfd-h3-v5r" id="wiS-FA-can"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="34.632683658170919"/>
         </scene>
     </scenes>
 </document>

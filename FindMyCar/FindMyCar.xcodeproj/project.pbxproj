@@ -15,6 +15,7 @@
 		A4B5DDEE1DAF3E2D00CCE3DD /* FindMyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DDED1DAF3E2D00CCE3DD /* FindMyCarTests.swift */; };
 		A4B5DDF91DAF3E2D00CCE3DD /* FindMyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DDF81DAF3E2D00CCE3DD /* FindMyCarUITests.swift */; };
 		A4B5DE071DAF9BE600CCE3DD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5DE061DAF9BE600CCE3DD /* MapViewController.swift */; };
+		A4B5DE0C1DAFA98500CCE3DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B5DE0B1DAFA98500CCE3DD /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A4B5DDF81DAF3E2D00CCE3DD /* FindMyCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyCarUITests.swift; sourceTree = "<group>"; };
 		A4B5DDFA1DAF3E2D00CCE3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4B5DE061DAF9BE600CCE3DD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		A4B5DE0B1DAFA98500CCE3DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B5DE0C1DAFA98500CCE3DD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				A4B5DDEC1DAF3E2D00CCE3DD /* FindMyCarTests */,
 				A4B5DDF71DAF3E2D00CCE3DD /* FindMyCarUITests */,
 				A4B5DDD61DAF3E2C00CCE3DD /* Products */,
+				A4B5DE0A1DAFA98500CCE3DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				A4B5DDFA1DAF3E2D00CCE3DD /* Info.plist */,
 			);
 			path = FindMyCarUITests;
+			sourceTree = "<group>";
+		};
+		A4B5DE0A1DAFA98500CCE3DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4B5DE0B1DAFA98500CCE3DD /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +209,11 @@
 					A4B5DDD41DAF3E2B00CCE3DD = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A4B5DDE81DAF3E2D00CCE3DD = {
 						CreatedOnToolsVersion = 8.0;
